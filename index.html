@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./mainStyle.css">
+  <link rel="icon" href="./imgs/outline_dashboard_black_24dp.png">
+  <!-- icons link -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+  <title>dashboard</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2>bdbd</h2>
+      <ul>
+        <li>
+          <i class="material-icons">equalizer</i>
+          <a id="navLink" href="./index.html">dashboard</a>
+        </li>
+        <li>
+          <i class="material-icons">settings</i>
+          <a id="navLink" href="./pags/setting/setting.html">setting</a>
+        </li>
+        <li>
+          <i class="material-icons">person</i>
+          <a id="navLink" href="./pags/profile/profile.html">profile</a>
+        </li>
+        <li>
+          <i class="material-icons">account_tree</i>
+          <a id="navLink" href="./pags/projects/projects.html">projects</a>
+        </li>
+        <li>
+          <i class="material-icons">school</i>
+          <a id="navLink" href="./pags/courses/courses.html">courses</a>
+        </li>
+        <li>
+          <i class="material-icons">account_circle</i>
+          <a id="navLink" href="./pags/friends/friends.html">friends</a>
+        </li>
+        <li>
+          <i class="material-icons">folder</i>
+          <a id="navLink" href="./pags/friends/friends.html">files</a>
+        </li>
+        <li>
+          <i class="material-icons">credit_card</i>
+          <a id="navLink" href="./pags/friends/friends.html">plans</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav>
+      <div class="search-box border-radius">
+        <i class="material-icons">search</i>
+        <input type="search" placeholder="Type A Keyword" >
+      </div>
+      <div class="right">
+        <i class="material-icons">notifications</i>
+        <img src="./imgs/avatar.png" alt="">
+      </div>
+    </nav>
+    <div class="container">
+      <h2>dashboard</h2>
+      <div class="container">
+        <section class="welcome border-radius">
+          <header>
+            <div class="left">
+              <h2>welcome</h2>
+              <p>abdullah</p>
+            </div>
+            <div class="right">
+              <img src="imgs/welcome.png" alt="">
+            </div>
+          </header>
+          <img src="./imgs/avatar.png" alt="">
+          <section>
+            <div>
+              <h2>abdullah sameh</h2>
+              <p>developer</p>
+            </div>
+            <div>
+              <h2>30</h2>
+              <p>projects</p>
+            </div>
+            <div>
+              <h2>00$</h2>
+              <p>earned</p>
+            </div>
+          </section>
+          <button class="border-radius">Profile</button>
+        </section>
+        <section class="quick-draft border-radius">
+          <h2>quick draft</h2>
+          <p>write a draft for your ideas</p>
+          <input type="text" placeholder="Title" class="border-radius" >
+          <textarea placeholder="Your Thought" class="border-radius" ></textarea>
+          <button class="border-radius">save</button>
+        </section>
+        <section class="yearly-target border-radius">
+          <h2>yearly target</h2>
+          <p>target of the year</p>
+          <div>
+            <i class="material-icons">attach_money</i>
+            <h2>money</h2>
+            <p>$20.000</p>
+            <progress value=".8"></progress>
+          </div>
+          <div>
+            <i class="material-icons">code</i>
+            <h2>projects</h2>
+            <p>30</p>
+            <progress value=".55"></progress>
+          </div>
+          <div>
+            <i class="material-icons">person</i>
+            <h2>team</h2>
+            <p>12</p>
+            <progress value=".75"></progress>
+          </div>
+        </section>
+        <section class="ticket border-radius">
+          <h2>tickets statics</h2>
+          <p>everything about support tickets</p>
+          <div class="content">
+            <section>
+              <i class="material-icons">list_alt</i>
+              <h2>2500</h2>
+              <p>total</p>
+            </section>
+            <section>
+              <i class="material-icons">sync</i>
+              <h2>500</h2>
+              <p>pending</p>
+            </section>
+            <section>
+              <i class="material-icons">check</i>
+              <h2>1900</h2>
+              <p>closed</p>
+            </section>
+            <section>
+              <i class="material-icons">clear</i>
+              <h2>100</h2>
+              <p>deleted</p>
+            </section>
+          </div>
+        </section>
+        
+        <section class="latest-news border-radius">
+          <h2>latest news</h2>
+          <div class="content">
+            <section>
+              <img class="border-radius" src="./imgs/news-01.png" alt="new1">
+              <h2>created SASS section</h2>
+              <p>new SASS examples & tutorial</p>
+              <p class="border-radius">3 days ago</p>
+            </section>
+            <section>
+              <img class="border-radius" src="./imgs/news-02.png" alt="new2">
+              <h2>changed the design</h2>
+              <p>A Brand New Website Design</p>
+              <p class="border-radius">5 days ago</p>
+            </section>
+            <section>
+              <img class="border-radius" src="./imgs/news-03.png" alt="new3">
+              <h2>Team Increased</h2>
+              <p>3 Developers Joined The Team</p>
+              <p class="border-radius">7 days ago</p>
+            </section>
+            <section>
+              <img class="border-radius" src="./imgs/news-04.png" alt="new4">
+              <h2>Added Payment Gateway</h2>
+              <p>Many New Payment Gateways Added</p>
+              <p class="border-radius">9 days ago</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="latest-tasks border-radius">
+          <h2>latest tasks</h2>
+          <section>
+            <h2>record one new video</h2>
+            <p>record python create exe project</p>
+            <i class="material-icons">delete</i>
+          </section>
+          <section>
+            <h2>write article</h2>
+            <p>Write Low Level vs High Level Languages</p>
+            <i class="material-icons">delete</i>
+          </section>
+          <section>
+            <h2>finish project</h2>
+            <p>Publish Academy Programming Project</p>
+            <i class="material-icons">delete</i>
+          </section>
+          <section disabled>
+            <h2>attend the meeting</h2>
+            <p>Attend The Project Business Analysis Meeting</p>
+            <i class="material-icons">delete</i>
+          </section>
+          <section>
+            <h2>record one new video</h2>
+            <p>Finish Teaching Flex Box</p>
+            <i class="material-icons">delete</i>
+          </section>
+        </section>
+        
+        <section class="search-item border-radius">
+          <h2>top search items</h2>
+          <section>
+            <h2>keyword</h2>
+            <p>search count</p>
+          </section>
+          <section>
+            <h2>programming</h2>
+            <p>220</p>
+          </section>
+          <section>
+            <h2>javascript</h2>
+            <p>180</p>
+          </section>
+          <section>
+            <h2>PHP</h2>
+            <p>160</p>
+          </section>
+          <section>
+            <h2>code</h2>
+            <p>145</p>
+          </section>
+          <section>
+            <h2>data stracture</h2>
+            <p>110</p>
+          </section>
+          <section>
+            <h2>logic</h2>
+            <p>95</p>
+          </section>
+
+        </section>
+        <section class="latest-uploads border-radius">
+          <h2>latest uploads</h2>
+          <div class="content">
+            <section>
+              <div class="left">
+                <img src="./imgs/pdf.svg" alt="pdf image">
+                <h2>my-file.pdf</h2>
+                <p>ali</p>
+              </div>
+              <div class="right">
+                <p>2.9mb</p>
+              </div>
+            </section>
+            <section>
+              <div class="left">
+                <img src="./imgs/avi.svg" alt="avi image">
+                <h2>my-video-file.avi</h2>
+                <p>mohsen</p>
+              </div>
+              <div class="right">
+                <p>4.9mb</p>
+              </div>
+            </section>
+            <section>
+              <div class="left">
+                <img src="./imgs/psd.svg" alt="psd image">
+                <h2>my-file.psd</h2>
+                <p>abdo</p>
+              </div>
+              <div class="right">
+                <p>4.5mb</p>
+              </div>
+            </section>
+            <section>
+              <div class="left">
+                <img src="./imgs/zip.svg" alt="zip image">
+                <h2>my-file.zip</h2>
+                <p>hamada</p>
+              </div>
+              <div class="right">
+                <p>8.9mb</p>
+              </div>
+            </section>
+            <section>
+              <div class="left">
+                <img src="./imgs/dll.svg" alt="dll image">
+                <h2>my-file.dll</h2>
+                <p>user</p>
+              </div>
+              <div class="right">
+                <p>2.9mb</p>
+              </div>
+            </section>
+            <section>
+              <div class="left">
+                <img src="./imgs/eps.svg" alt="eps image">
+                <h2>my-file.eps</h2>
+                <p>designer</p>
+              </div>
+              <div class="right">
+                <p>8.9mb</p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="progress-project border-radius">
+          <h2>last project progress</h2>
+          <ul>
+            <li>got the project</li>
+            <li>start the project</li>
+            <li>the project about to finish</li>
+            <li>test the project</li>
+            <li>finish the project & get money</li>
+          </ul>
+        </section>
+        
+        <section class="reminder border-radius">
+          <h2>reminder</h2>
+          <div class="content">
+            <section>
+              <h2>check my tasks list</h2>
+              <p>28/09/2022 - 12:00am</p>
+            </section>
+            <section>
+              <h2>Check My Projects</h2>
+              <p>28/09/2022 - 12:00am</p>
+            </section>
+            <section>
+              <h2>Call All My Clients</h2>
+              <p>05/11/2022 - 12:00am</p>
+            </section>
+            <section>
+              <h2>Finish The Development Workshop</h2>
+              <p>20/12/2022 - 12:00am</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="latest-post border-radius">
+          <h2>latest post</h2>
+          <div>
+            <img src="./imgs/avatar.png" alt="avatar img">
+            <h2>abdullah sameh</h2>
+            <p>about 3 hours ago</p>
+          </div>
+          <p>
+            You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.
+          </p>
+          <footer>
+            <div class="left">
+              <i class="material-icons">favorite</i>
+              <p>1.2k</p>
+            </div>
+            <div class="right">
+              <i class="material-icons">forum</i>
+              <p>500</p>
+            </div>
+          </footer>
+        </section>
+
+        <section class="stats border-radius">
+          <h2>social media stats</h2>
+          <div>
+            <i class="fa fa-twitter"></i>
+            <p>90k followers</p>
+            <button>follow</button>
+          </div>
+          <div>
+            <i class="fa fa-facebook"></i>
+            <p>2M like</p>
+            <button>like</button>
+          </div>
+          <div>
+            <i class="fa fa-youtube"></i>
+            <p>1M subs</p>
+            <button>subscribe</button>
+          </div>
+          <div>
+            <i class="fa fa-linkedin"></i>
+            <p>70k followers</p>
+            <button>follow</button>
+          </div>
+        </section>
+  
+        <section class="projects border-radius">
+          <h2>projects</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>name</th>
+                <th>finish date</th>
+                <th>client</th>
+                <th>price</th>
+                <th>team</th>
+                <th>status</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Ministry Wikipedia</td>
+              <td>10 May 2022</td>
+              <td>Ministry</td>
+              <td>$5300</td>
+              <td>
+                <img src="./imgs/team-01.png" alt="1">
+                <img src="./imgs/team-02.png" alt="2">
+                <img src="./imgs/team-03.png" alt="3">
+                <img src="./imgs/team-05.png" alt="4">
+              </td>
+              <td>
+                <p>pending</p>
+              </td>
+            </tr>
+            <tr>
+              <td>cafee</td>
+              <td>10 oct 2022</td>
+              <td>mohsen company</td>
+              <td>$1500</td>
+              <td>
+                <img src="./imgs/team-01.png" alt="1">
+                <img src="./imgs/team-02.png" alt="2">
+                <img src="./imgs/team-03.png" alt="3">
+              </td>
+              <td>
+                <p>in progress</p>
+              </td>
+            </tr>
+            <tr>
+              <td>bouba shop</td>
+              <td>10 Sep 2021</td>
+              <td>Bouba</td>
+              <td>$800</td>
+              <td>
+                <img src="./imgs/team-01.png" alt="1">
+                <img src="./imgs/team-02.png" alt="2">
+              </td>
+              <td>
+                <p>completed</p>
+              </td>
+            </tr>
+            <tr>
+              <td>hamoda website</td>
+              <td>10 march 2022</td>
+              <td>hamoda</td>
+              <td>$20</td>
+              <td>
+                <img src="./imgs/team-01.png" alt="1">
+              </td>
+              <td>
+                <p>completed</p>
+              </td>
+            </tr>
+            <tr>
+              <td>sayed website</td>
+              <td>10 march 2022</td>
+              <td>sayed</td>
+              <td>$50</td>
+              <td>
+                <img src="./imgs/team-01.png" alt="1">
+                <img src="./imgs/team-02.png" alt="2">
+              </td>
+              <td>
+                <p>rejected</p>
+              </td>
+            </tr>
+            <tr>
+              <td>arena app</td>
+              <td>01 dec 2022</td>
+              <td>arena</td>
+              <td>$1200</td>
+              <td>
+                <img src="./imgs/team-01.png" alt="1">
+                <img src="./imgs/team-02.png" alt="2">
+                <img src="./imgs/team-03.png" alt="3">
+                <img src="./imgs/team-05.png" alt="4">
+              </td>
+              <td>
+                <p>completed</p>
+              </td>
+            </tr>
+          </table>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
