@@ -14,7 +14,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
 
-  <title>setting</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Setting</title>
 </head>
 <body>
   <header>
@@ -22,41 +24,226 @@
       <h2>bdbd</h2>
       <ul>
         <li>
-          <i class="material-icons">equalizer</i>
-          <a id="navLink" href="../../index.html">dashboard</a>
+          <a id="navLink" href="../../index.html">
+            <i class="material-icons">equalizer</i>
+            dashboard
+          </a>
         </li>
         <li>
-          <i class="material-icons">settings</i>
-          <a id="navLink" href="./setting.html">setting</a>
+          <a id="navLink" href="./setting.html">
+            <i class="material-icons">settings</i>
+            setting
+          </a>
         </li>
         <li>
-          <i class="material-icons">person</i>
-          <a id="navLink" href="../profile/profile.html">profile</a>
+          <a id="navLink" href="../profile/profile.html">
+            <i class="material-icons">person</i>
+            profile
+          </a>
         </li>
         <li>
-          <i class="material-icons">account_tree</i>
-          <a id="navLink" href="../projects/projects.html">projects</a>
+          <a id="navLink" href="../projects/projects.html">
+            <i class="material-icons">account_tree</i>
+            projects
+          </a>
         </li>
         <li>
-          <i class="material-icons">school</i>
-          <a id="navLink" href="../courses/courses.html">courses</a>
+          <a id="navLink" href="../courses/courses.html">
+            <i class="material-icons">school</i>
+            courses
+          </a>
         </li>
         <li>
-          <i class="material-icons">account_circle</i>
-          <a id="navLink" href="../friends/friends.html">friends</a>
+          <a id="navLink" href="../friends/friends.html">
+            <i class="material-icons">account_circle</i>
+            friends
+          </a>
         </li>
         <li>
-          <i class="material-icons">folder</i>
-          <a id="navLink" href="../friends/friends.html">files</a>
+          <a id="navLink" href="../friends/friends.html">
+            <i class="material-icons">folder</i>
+            files
+          </a>
         </li>
         <li>
-          <i class="material-icons">credit_card</i>
-          <a id="navLink" href="../friends/friends.html">plans</a>
+          <a id="navLink" href="../friends/friends.html">
+            <i class="material-icons">credit_card</i>
+            plans
+          </a>
         </li>
       </ul>
     </nav>
   </header>
+  <main>
+    <nav>
+      <div class="search-box border-radius">
+        <i class="material-icons">search</i>
+        <input type="search" placeholder="Type A Keyword" >
+      </div>
+      <div class="right">
+        <i class="material-icons">notifications</i>
+        <img src="../../imgs/avatar.png" alt="">
+      </div>
+    </nav>
+    <div class="container">
+      <h2>setting</h2>
+      <div class="container">
+        <section class="site-control">
+          <header>
+            <h2>site control</h2>
+            <p>Control The Website If There Is Maintenance</p>
+          </header>
+          <div>
+            <div class="left">
+              <h2>website control</h2>
+              <p>open/close website and type the reason</p>
+            </div>
+            <div class="right">
+              <label for="site-checkbtn">
+                <input type="checkbox" name="site-checkbtn" id="site-checkbtn">
+                <div class="checkbtn-div"></div>
+              </label>
+            </div>
+          </div>
+          <textarea cols="30" rows="10" placeholder="Close message content"></textarea>
+        </section>
+        <section class="general-info">
+          <header>
+            <h2>general info</h2>
+            <p>General Information About Your Account</p>
+          </header>
+          <form>
+            <label for="first-name">first name</label>
+            <input type="text" name="first-name" placeholder="first name" >
 
+            <label for="last-name">last name</label>
+            <input type="text" name="last-name" placeholder="last name" >
+
+            <label for="email">email</label>
+            <input type="email" name="email" disabled placeholder="email" value="mohsen@hekho.ok" disabled >
+
+            <a href="#">change</a>
+          </form>
+        </section>
+        <section class="security-info">
+          <header>
+            <h2>security info</h2>
+            <p>Security Information About Your Account</p>
+          </header>
+          <div>
+            <div>
+              <h2>password</h2>
+              <p>last change on 25/10/2021</p>
+            </div>
+            <div>
+              <button>change</button>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2>Two-Factor Authentication</h2>
+              <p>Enable/Disable The Feature</p>
+            </div>
+            <div>
+              <label for="security-checkbtn">
+                <input checked type="checkbox" name="security-checkbtn" id="security-checkbtn">
+                <div class="checkbtn-div"></div>
+              </label>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2>devices</h2>
+              <p>Check The Login Devices List</p>
+            </div>
+            <div>
+              <p>devices</p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="social-info">
+          <header>
+            <h2>social info</h2>
+            <p>social media information</p>
+          </header>
+          <div>
+            <i class="fa fa-twitter"></i>
+            <input type="text" placeholder="Twitter Username">
+          </div>
+          <div>
+            <i class="fa fa-facebook"></i>
+            <input type="text" placeholder="facebook Username">
+          </div>
+          <div>
+            <i class="fa fa-youtube"></i>
+            <input type="text" placeholder="youtube Username">
+          </div>
+          <div>
+            <i class="fa fa-linkedin"></i>
+            <input type="text" placeholder="linkedin Username">
+          </div>
+        </section>
+        <section class="widgets-control">
+          <header>
+            <h2>widgets control</h2>
+            <p>show/hide widgets</p>
+          </header>
+          <input type="checkbox" class="special" name="quick" id="quick">
+          <label for="quick">quick draft</label>
+
+          <input type="checkbox" class="special" name="target" id="target">
+          <label for="target">yearly target</label>
+
+          <input type="checkbox" class="special" name="tickets" id="tickets">
+          <label for="tickets">tickets statics</label>
+
+          <input type="checkbox" class="special" name="news" id="news">
+          <label for="news">latest news</label>
+
+          <input type="checkbox" class="special" name="tasks" id="tasks">
+          <label for="tasks">latest tasks</label>
+
+          <input type="checkbox" class="special" name="search-items" id="search-items">
+          <label for="search-items">top search items</label>
+        </section>
+
+        <section class="backup-manager">
+          <header>
+            <h2>backup manager</h2>
+            <p>control backup time and location</p>
+          </header>
+          
+          <input type="radio" name="backup" id="daily" checked>
+          <label for="daily">daily</label>
+
+          <input type="radio" name="backup" id="weekly">
+          <label for="weekly">weekly</label>
+          
+          <input type="radio" name="backup" id="monthly">
+          <label for="monthly">monthly</label>
+
+          <footer>
+            <input type="radio" name="footer-backup" id="one">
+            <label for="one">
+              <i class="material-icons">dns</i>
+              megaman
+            </label>
+            <input type="radio" name="footer-backup" id="two" checked>
+            <label for="two">
+              <i class="material-icons">dns</i>
+              zero
+            </label>
+            <input type="radio" name="footer-backup" id="three">
+            <label for="three">
+              <i class="material-icons">dns</i>
+              sigma
+            </label>
+          </footer>
+        </section>
+      </div>
+    </div>
+  </main>
   <script src="../../main.js"></script>
 </body>
 </html>

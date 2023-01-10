@@ -25,6 +25,15 @@
   -ms-border-radius: var(--radius);
   -o-border-radius: var(--radius);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--main-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
 body {
   display: flex;
   font-family: 'Open Sans', sans-serif;
@@ -34,9 +43,39 @@ body {
 }
 button:hover {
   background-image: linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)) !important; 
+  cursor: pointer;
 }
 .hover {
   background: #f6f6f6;
+}
+/* for sections and header init and paragraph after */
+main > .container > .container > section {
+  background-color: var(--main-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  overflow: hidden;
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+main > .container > .container > section > h2,
+main > .container > .container > section > header > h2 {
+  text-transform: capitalize;
+  color: var(--main-font-color);
+  margin-bottom: 10px;
+}
+section > header > h2 + p,
+section > header > div h2 + p {
+  color: var(--second-font-color);
+  text-transform: capitalize;
+  margin: 10px 0;
+  font-size: 14px;
+}
+section > div h2 {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
 }
 /* start nav left */
 header > nav {
@@ -92,10 +131,6 @@ header > nav > ul > li {
   width: 150px;
   border-radius: 10px;
   margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
   color: var(--main-font-color);
   cursor: pointer;
   transition: var(--time-trannsition);
@@ -115,23 +150,30 @@ header > nav > ul > li > a {
   text-transform: capitalize;
   font-family: 'Open-sans', sans-serif;
   cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 @media only screen and (max-width: 600px){
   header > nav > h2 {
       font-size: 16px;
       padding: 0;
       padding-bottom: 10px;
-
+  }
+  header > nav {
+    padding: 10px;
   }
   header > nav > ul > li {
     width: auto;
   }
   header > nav > ul > li > a {
-    display: none;
+    width: 20px;
+    overflow: hidden;
   }
 }
-/* end nav left */
-/* start nav top */
+/* end left nav */
+/* start top nav */
 main {
   width: 100%;
 }
@@ -190,7 +232,7 @@ main > nav > .right > i::before {
 main > nav img {
   width: 30px;
 }
-/* end nav top */
+/* end top nav */
 /* start content in main */
 main > .container {
   background-color: #F1F5F9;
@@ -228,9 +270,13 @@ main > .container > .container {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
 }
-main > .container > .container > section {
-  background-color: var(--main-bg);
-  overflow: hidden;
+@media only screen and (max-width: 600px) { 
+  main > .container > .container {
+    grid-template-columns: minmax(100px, 1fr);
+  }
+}
+.welcome {
+  padding: 0 !important;
 }
 .welcome > header {
   display: flex;
@@ -289,17 +335,27 @@ main > .container > .container > section {
   cursor: pointer;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 600px) {
+  .welcome > header img {
+    display: none;
+  }
+  .welcome > img {
+    margin-left: calc(50% - 35px);
+  }
+  .welcome > img + section {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .welcome > img + section > div > h2 {
+    margin-bottom: 5px;
+  }
+} 
 /* end welcome section */
 /* start quick-draft */
 .quick-draft {
   display: grid;
-  padding: 20px;
   align-items: flex-start;
   gap: 20px;
-}
-.quick-draft > h2 {
-  text-transform: capitalize;
-  color: var(--main-font-color);
 }
 .quick-draft > p {
   color: var(--second-font-color);
@@ -327,13 +383,9 @@ main > .container > .container > section {
 }
 /* end quick-draft */
 .yearly-target {
-  padding: 20px;
   display: grid;
   gap: 20px;
   text-transform: capitalize;
-}
-.yearly-target > h2 {
-  color: var(--main-font-color);
 }
 .yearly-target > p {
   color: var(--second-font-color);
@@ -442,13 +494,10 @@ main > .container > .container > section {
   left: calc(75% - 7.5px);
   border-color: var(--green) transparent transparent transparent;
 }
+/* start ticket */
 .ticket {
-  padding: 20px;
   display: grid;
   gap: 20px;
-}
-.ticket > h2 {
-  text-transform: capitalize;
 }
 .ticket > p {
   color: var(--second-font-color);
@@ -506,7 +555,6 @@ main > .container > .container > section {
 /* end ticket */
 /* start latest news */
 .latest-news {
-  padding: 20px;
   display: grid;
   gap: 20px;
 }
@@ -541,11 +589,19 @@ main > .container > .container > section {
   padding: 5px 10px;
   text-transform: capitalize;
 }
+
+@media only screen and (max-width: 600px) { 
+  .latest-news > .content > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .latest-news > .content > section > * {
+    margin: 0 !important;
+  }
+}
 /* end latest news */
 /* start latest tasks */
-.latest-tasks {
-  padding: 20px;
-}
 .latest-tasks > section {
   padding: 20px 0;
   display: grid;
@@ -588,11 +644,7 @@ main > .container > .container > section {
 /* search-item */
 .search-item {
   display: grid;
-  padding: 20px;
   gap: 20px;
-}
-.search-item > h2 {
-  text-transform: capitalize;
 }
 .search-item > section {
   display: flex;
@@ -621,12 +673,8 @@ main > .container > .container > section {
 /* end search-item */
 /* start latest uploads */
 .latest-uploads {
-  padding: 20px;
   display: grid;
   gap: 20px;
-}
-.latest-uploads > h2 {
-  text-transform: capitalize;
 }
 .latest-uploads > .content {
   display: inherit;
@@ -669,7 +717,6 @@ main > .container > .container > section {
 /* end latest uploads */
 /* start progress-project */
 .progress-project {
-  padding: 20px;
   display: grid;
   align-content: start;
   gap: 20px;
@@ -677,9 +724,6 @@ main > .container > .container > section {
   background-size: 150px;
   background-repeat: no-repeat;
   background-position: bottom right;
-}
-.progress-project > h2 {
-  text-transform: capitalize;
 }
 .progress-project > ul {
   display: grid;
@@ -734,12 +778,8 @@ main > .container > .container > section {
 /* end progress-project */
 /* start reminder */
 .reminder {
-  padding: 20px;
   display: grid;
   gap: 15px;
-}
-.reminder > h2 {
-  text-transform: capitalize;
 }
 .reminder > .content {
   display: grid;
@@ -803,12 +843,8 @@ main > .container > .container > section {
 /* end reminder */
 /* start latest-post */
 .latest-post {
-  padding: 20px;
   display: grid;
   gap: 20px;
-}
-.latest-post {
-  text-transform: capitalize;
 }
 .latest-post > div {
   display: grid;
@@ -842,13 +878,11 @@ main > .container > .container > section {
 /* end latest-post */
 /* start stats */
 .stats {
-  padding: 20px;
   display: grid;
   gap: 10px;
 }
 .stats > h2 {
   margin-top: 10px;
-  text-transform: capitalize;
 }
 .stats > div {
   display: grid;
@@ -954,11 +988,9 @@ main > .container > .container > section {
 /* end stats */
 /* start projects */
 .projects {
-  padding: 20px;
   overflow: auto !important;
 }
 .projects > h2 {
-  text-transform: capitalize;
   margin-bottom: 20px;
 }
 
@@ -992,7 +1024,7 @@ main > .container > .container > section {
 .projects > table {
   width: 100%;
   border-collapse: collapse;
-  min-width: max-content;
+  min-width: 900px;
 }
 .projects > table > thead {
   background: var(--third-bg);
