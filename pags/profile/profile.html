@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../mainStyle.css">
+  <link rel="icon" href="./imgs/outline_dashboard_black_24dp.png">
+  <!-- icons link -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Profile</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2>bdbd</h2>
+      <ul>
+        <li>
+          <a id="navLink" href="../../index.html">
+            <i class="material-icons">equalizer</i>
+            dashboard
+          </a>
+        </li>
+        <li>
+          <a id="navLink" href="../setting/setting.html">
+            <i class="material-icons">settings</i>
+            setting
+          </a>
+        </li>
+        <li>
+          <a id="navLink" href="./profile.html">
+            <i class="material-icons">person</i>
+            profile
+          </a>
+        </li>
+        <li>
+          <a id="navLink" href="../projects/projects.html">
+            <i class="material-icons">account_tree</i>
+            projects
+          </a>
+        </li>
+        <li>
+          <a id="navLink" href="../courses/courses.html">
+            <i class="material-icons">school</i>
+            courses
+          </a>
+        </li>
+        <li>
+          <a id="navLink" href="../friends/friends.html">
+            <i class="material-icons">account_circle</i>
+            friends
+          </a>
+        </li>
+        <li>
+          <a id="navLink" href="../friends/friends.html">
+            <i class="material-icons">folder</i>
+            files
+          </a>
+        </li>
+        <li>
+          <a id="navLink" href="../friends/friends.html">
+            <i class="material-icons">credit_card</i>
+            plans
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <nav>
+      <div class="search-box border-radius">
+        <i class="material-icons">search</i>
+        <input type="search" placeholder="Type A Keyword" >
+      </div>
+      <div class="right">
+        <i class="material-icons">notifications</i>
+        <img src="../../imgs/avatar.png" alt="">
+      </div>
+    </nav>
+    <div class="container">
+      <h2>profile</h2>
+      <div class="container">
+        <section class="border-radius profile">
+          <div class="left">
+            <img src="../../imgs/avatar.png" alt="">
+            <h2>abdullah sameh</h2>
+            <p id="level">level 20</p>
+            <progress value=".8"></progress>
+            <div class="stares">
+              <i class="material-icons">stare</i>
+              <i class="material-icons">stare</i>
+              <i class="material-icons">stare</i>
+              <i class="material-icons">stare</i>
+              <i class="material-icons">stare</i>
+            </div>
+            <p id="rating">550 rating</p>
+          </div>
+          <div class="right">
+            <div id="generalInfo">
+              <h2>general information</h2>
+              <div class="content">
+                <p><b>full name:</b> abdullah sameh</p>
+                <p><b>gender:</b> male</p>
+                <p><b>country:</b> egypt</p>
+                <label for="general-checkbtn">
+                  <input checked type="checkbox" name="general-checkbtn" id="general-checkbtn">
+                  <div class="checkbtn-div"></div>
+                </label>
+              </div>
+            </div>
+            <div id="personalInfo">
+              <h2>personal information</h2>
+              <div class="content">
+                <p><b>email:</b> abdullahsameh@edu.eg</p>
+                <p><b>phone:</b> +123-456-789</p>
+                <p><b>date of birth:</b> 12/3/2003</p>
+                <label for="personal-checkbtn">
+                  <input type="checkbox" name="personal-checkbtn" id="personal-checkbtn">
+                  <div class="checkbtn-div"></div>
+                </label>
+              </div>
+            </div>
+            <div id="jobInfo">
+              <h2>job information</h2>
+              <div class="content">
+                <p><b>title:</b> front-end developer</p>
+                <p><b>programming Language:</b> JavaScript</p>
+                <p><b>years of experience:</b> 15+</p>
+                <label for="job-checkbtn">
+                  <input checked type="checkbox" name="job-checkbtn" id="job-checkbtn">
+                  <div class="checkbtn-div"></div>
+                </label>
+              </div>
+            </div>
+            <div id="billingInfo">
+              <h2>billing information</h2>
+              <div class="content">
+                <p><b>payment method:</b> vodafone cashe</p>
+                <p><b>email:</b> abdo@edu.eg</p>
+                <p><b>subscription:</b> monthly</p>
+                <label for="billing-checkbtn">
+                  <input type="checkbox" name="billing-checkbtn" id="billing-checkbtn">
+                  <div class="checkbtn-div"></div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills border-radius">
+          <header>
+            <h2>my skills</h2>
+            <p>complete skills list</p>
+          </header>
+          <div>
+            <p>html</p>
+            <p>css</p>
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <p>reactJs</p>
+            <p>learning linux</p>
+          </div>
+        </section>
+        
+        <section class="latest-activities">
+          <header>
+            <h2>latest activities</h2>
+            <p>latest activities done by the user</p>
+          </header>
+          <div class="reward">
+            <img src="../../imgs/activity-01.png" alt="">
+            <div>
+              <h2>store</h2>
+              <p>bought the mastering python course</p>
+            </div>
+            <div>
+              <p class="time">18:10</p>
+              <p class="day">last week</p>
+            </div>
+          </div>
+          <div class="reward">
+            <img src="../../imgs/activity-02.png" alt="">
+            <div>
+              <h2>academy</h2>
+              <p>got the front-end certificate</p>
+            </div>
+            <div>
+              <p class="time">16:06</p>
+              <p class="day">last month</p>
+            </div>
+          </div>
+          <div class="reward">
+            <img src="../../imgs/activity-03.png" alt="">
+            <div>
+              <h2>badges</h2>
+              <p>unlocked the 10 skills badge</p>
+            </div>
+            <div>
+              <p class="time">18:10</p>
+              <p class="day">last year</p>
+            </div>
+          </div>
+          <div class="reward">
+            <img src="../../imgs/activity-01.png" alt="">
+            <div>
+              <h2>store</h2>
+              <p>bought the mastering python course</p>
+            </div>
+            <div>
+              <p class="time">12:10</p>
+              <p class="day">yesterday</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="../../main.js"></script>
+</body>
+</html>

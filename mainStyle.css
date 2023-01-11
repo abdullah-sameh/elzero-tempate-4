@@ -48,6 +48,52 @@ button:hover {
 .hover {
   background: #f6f6f6;
 }
+/* toggle button */
+.checkbtn-div {
+  background: var(--second-font-color);
+  cursor: pointer;
+  width: 75px;
+  height: 30px;
+  position: relative;
+  border-radius: 50px;
+  transition: 0.5s;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.checkbtn-div::before {
+  content: '\e5cd';
+  font-family: 'Material Icons';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: var(--second-font-color);
+  font-size: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+input:checked + .checkbtn-div {
+  background: var(--blue);
+}
+input:checked + .checkbtn-div::before {
+  content: '\e876';
+  color: var(--blue);
+  left: calc(100% - (5px + 20px));
+}
 /* for sections and header init and paragraph after */
 main > .container > .container > section {
   background-color: var(--main-bg);
@@ -155,7 +201,7 @@ header > nav > ul > li > a {
   align-items: center;
   gap: 10px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
   header > nav > h2 {
       font-size: 16px;
       padding: 0;
