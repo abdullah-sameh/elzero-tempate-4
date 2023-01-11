@@ -127,10 +127,10 @@ section > div h2 {
 header > nav {
   padding: 20px;
   height: 100%;
+  min-height: 100vh;
   box-shadow: 0 0 10px rgb(0 0 0 / 0.3);
   background: var(--main-bg);
   position: relative;
-  min-height: 100vh;
 }
 header > nav > h2 {
   width: max-content;
@@ -222,6 +222,7 @@ header > nav > ul > li > a {
 /* start top nav */
 main {
   width: 100%;
+  background: var(--second-bg) !important;
 }
 main > * {
   padding: 20px;
@@ -280,9 +281,6 @@ main > nav img {
 }
 /* end top nav */
 /* start content in main */
-main > .container {
-  background-color: #F1F5F9;
-}
 main > .container > h2 {
   text-transform: capitalize;
   font-size: 35px;
