@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../imgs/outline_dashboard_black_24dp.png">
   <!-- icons link -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!-- font google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="../css files/files.css">
   <link rel="stylesheet" href="../css files/mainStyle.css">
   <title>Files</title>
 </head>
@@ -86,12 +86,53 @@
     </nav>
     <div class="container">
       <h2>files</h2>
-      <div class="container">
-        <section>files</section>
+      <section class="statistics">
+        <h2>files statistics</h2>
+        <div>
+          <i class="material-icons">picture_as_pdf</i>
+          <div>
+            <h2>PDF files</h2>
+            <p>130</p>
+          </div>
+          <p>6.5GB</p>
+        </div>
+        <div>
+          <i class="material-icons">image</i>
+          <div>
+            <h2>image files</h2>
+            <p>230</p>
+          </div>
+          <p>10.5GB</p>
+        </div>
+        <div>
+          <i class='fas fa-file-word'></i>
+          <div>
+            <h2>word files</h2>
+            <p>130</p>
+          </div>
+          <p>6.5GB</p>
+        </div>
+        <div>
+          <i class='fas fa-file-csv'></i>
+          <div>
+            <h2>csv files</h2>
+            <p>130</p>
+          </div>
+          <p>6.5GB</p>
+        </div>
+        <button>
+          <i class="material-icons">keyboard_double_arrow_up</i>
+          upload
+        </button>
+      </section>
+      <div class="container" id="container">
+       
       </div>
+      
     </div>
   </main>
 
+  <script src="../js files/files.js"></script>
   <script src="../js files/main.js"></script>
 </body>
 </html>

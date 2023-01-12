@@ -1,0 +1,67 @@
+#container {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+#container > section {
+  padding: 0;
+  position: relative;
+  height: 100%;
+  display: grid;
+}
+#container > section > img:first-child {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+
+}
+#container .team-img {
+  position: absolute;
+  width: 50px;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#container > section > header {
+  padding: 20px;
+}
+#container > section > header > h2 {
+  font-size: 18px;
+}
+#container > section > header > p {
+  font-size: 14px;
+}
+#container > section > button {
+  background: var(--blue);
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: inherit;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+#container > section > footer {
+  display: flex;
+  justify-content: space-between;
+  align-self: end;
+  padding: 20px;
+  color: var(--second-font-color);
+  border-top: 1px solid var(--third-bg);
+}
+#container > section > footer > * {
+  display: flex;
+}
