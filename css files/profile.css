@@ -175,5 +175,7 @@
 }
 .latest-activities > div > img {
   width: 60px; 
+  height: 60px;
+  align-self: center;
 }
 /* end lates activities */

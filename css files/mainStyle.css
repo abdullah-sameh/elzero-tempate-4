@@ -771,7 +771,7 @@ main > .container > .container {
   -o-border-radius: 5px;
 }
 /* end latest uploads */
-/* start progress-project */
+/* start last progress-project */
 .progress-project {
   display: grid;
   align-content: start;
@@ -784,21 +784,23 @@ main > .container > .container {
 .progress-project > ul {
   display: grid;
   gap: 30px;
+  position: relative;
+}
+.progress-project > ul::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: var(--blue);
+  left: 14px;
+  top: -5px
 }
 .progress-project > ul > li {
   position: relative;
   margin-left: 45px;
   text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
-}
-.progress-project > ul > li:not(:last-child):after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 20px;
-  left: -32.5px;
-  bottom: -25px;
-  background: var(--blue);
+  font-size: 14px;
 }
 .progress-project > ul > li::before {
   content: '';
@@ -810,7 +812,8 @@ main > .container > .container {
   border: 2px solid #fff;
   outline: 2px solid var(--blue);
   left: -45px;
-  bottom: -4.2px;
+  top: 50%;
+  transform: translateY(-50%);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -944,10 +947,9 @@ main > .container > .container {
   display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 20px;
-  align-items: baseline;
+  place-items: center;
 }
 .stats > div > i {
-  grid-row: 1/3;
   width: 55px;
   height: 55px;
   color: #fff;
@@ -970,11 +972,6 @@ main > .container > .container {
 }
 .stats > div > *:not(i) {
   text-transform: capitalize;
-  transform: translateY(-5px);
-  -webkit-transform: translateY(-5px);
-  -moz-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -o-transform: translateY(-5px);
 }
 .stats > div > button {
   margin-right: 15px;

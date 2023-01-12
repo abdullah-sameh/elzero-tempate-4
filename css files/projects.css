@@ -58,6 +58,18 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+@media (max-width: 600px) {
+  #container {
+    grid-template-columns: auto;
+  }
+  #container > section > .processes {
+    display: grid;
+    justify-content: start;
+  }
+  #container > section > .processes > p {
+    width: max-content ;   
+  }
+}
 #container > section > footer > progress {
   -webkit-appearance: none;
   appearance: none;
