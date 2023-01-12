@@ -208,7 +208,7 @@
   -ms-transform: translate(-50%, -50%) rotate(360deg);
   -o-transform: translate(-50%, -50%) rotate(360deg);
 }
-.widgets-control > input:hover {
+.widgets-control > input:is(:hover, :checked ) {
   border-color: var(--blue);
 }
 .widgets-control > label {
